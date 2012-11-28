@@ -1,1 +1,3 @@
-dsaf
+(function() {
+    console.log("sdfas");
+})();
