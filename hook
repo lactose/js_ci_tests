@@ -1,0 +1,10 @@
+#!/bin/bash
+gstatus=$(git status -s)
+
+if [[ "$gstatus" =~ ^[MA].*\.js.* ]]
+then
+    testacular start
+    exit $?
+fi
+
+
